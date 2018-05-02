@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="166px" height="169px" viewBox="0 0 166 169" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>CanBoard-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CanBoard-logo" stroke="#FFFFFF" stroke-width="6">
+            <rect id="Rectangle" x="3" y="3" width="160" height="163" rx="4"></rect>
+            <rect id="Rectangle" x="23" y="23" width="52" height="33"></rect>
+            <rect id="Rectangle" x="23" y="70" width="52" height="33"></rect>
+            <rect id="Rectangle" x="92" y="23" width="52" height="33"></rect>
+            <rect id="Rectangle" x="92" y="70" width="52" height="33"></rect>
+            <rect id="Rectangle" x="23" y="117" width="52" height="33"></rect>
+        </g>
+    </g>
+</svg>
