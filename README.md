@@ -1,3 +1,5 @@
+# SF local Docker Hackathon project (April 27-28, 2018), the front end
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
