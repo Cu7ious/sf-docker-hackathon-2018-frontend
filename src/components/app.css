@@ -1,0 +1,234 @@
+.wrapper .canban-board {
+  padding: 25px 0 0;
+  display: block
+}
+
+.wrapper .canban-board .dynamic-block {
+  position: relative;
+  text-align: initial;
+  min-width: 60vw;
+  width: 90vw;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  margin: 0 auto;
+}
+
+.wrapper .canban-board .dynamic-block > div {
+        width: 32%;
+        margin-right: 2%;
+}
+.wrapper .canban-board .dynamic-block .Board {
+
+}
+.wrapper .canban-board .dynamic-block .Board .Board-internals {
+        background-color: hsla(0, 0%, 100%, .8);
+        box-shadow: 0 0 4px rgba(0, 0, 0, .05), 0 4px 8px rgba(0, 0, 0, .1)
+}
+
+.wrapper .canban-board .dynamic-block .Board:last-child {
+        margin-right: 0;
+}
+
+.wrapper .canban-board .dynamic-block .Board h3 {
+        margin: 0;
+        padding: 0 20px 20px;
+}
+
+.wrapper .canban-board .dynamic-block .Board .input-form {
+        display: inline-block;
+width: 100%;
+color: #bbb;
+font: 16px monospace;
+box-shadow: inset 0 -4px 5px 0 rgba(0,0,0,.08);
+    border-top: 1px solid #bbbbbb40;
+height: 55px;
+}
+
+.wrapper .canban-board .dynamic-block .Board .input-form .control {
+        position: absolute;
+    margin-left: 20px;
+    margin-top: 3px;
+    font-size: 30px;
+    display: inline-block;
+    transition: color .3s linear;
+}
+
+.wrapper .canban-board .dynamic-block .Board .input-form input {
+        color: #3d4255;
+            border: 0;
+            height: 40px;
+            padding: 0px 0 0 20px;
+            margin: 5px 0 0;
+            background: transparent;
+            font-size: 18px;
+            font-weight: 100;
+}
+
+.wrapper .canban-board .dynamic-block .Board ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+}
+.wrapper .canban-board .dynamic-block .Board ul li {
+        box-sizing: border-box;
+width: 100%;
+min-height: 55px;
+line-height: 55px;
+position: relative;
+/* font-size: 30px; */
+font-weight: 100;
+border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.wrapper .canban-board .dynamic-block .Board ul li .remove {
+        color: transparent;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.wrapper .canban-board .dynamic-block .Board ul li:hover .remove {
+    color: #b51818;
+}
+
+.wrapper .canban-board .dynamic-block .Board ul li span {
+        padding: 0 60px 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.wrapper .canban-board .dynamic-block .Board ul li.item-is-done {
+        text-decoration: line-through;
+    color: #bbb;
+}
+
+@media screen and (max-width:850px) {
+  .wrapper .canban-board {
+    display: block;
+    padding: 8px 5px
+  }
+  .wrapper .canban-board .dynamic-block {
+    min-width: 70vw
+  }
+}
+
+@media screen and (max-width:650px) {
+  .wrapper .canban-board {
+    display: block;
+    padding: 8px 5px
+  }
+  .wrapper .canban-board .dynamic-block {
+    min-width: 96.5vw
+  }
+  .wrapper .canban-board ul li {
+    font-size: 20px!important
+  }
+}
+
+@media screen and (max-width:400px) {
+  .wrapper .canban-board .dynamic-block {
+    min-width: 390px;
+    width: 390px
+  }
+}
+
+.wrapper .canban-board ul {
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
+
+.wrapper .canban-board ul li {
+  min-height: 23px;
+  margin: 0 8px 8px 2px
+}
+
+.wrapper .canban-board ul li input {
+  width: 90% !important
+}
+
+.wrapper .canban-board .subreddit-delete {
+  z-index: 2;
+  padding: 0 0 0 10px !important;
+  top: -12px !important
+}
+
+.wrapper .canban-board ul input, .wrapper .canban-board ul li {
+  position: relative;
+}
+
+.wrapper .canban-board input {
+  outline: none;
+  font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+  width: 100%
+}
+
+.wrapper .canban-board .control {
+  font-style: normal;
+  cursor: pointer
+}
+
+.feed-card {
+  margin: 20px;
+  overflow: hidden
+}
+
+.feed-card figure {
+  margin: 0
+}
+
+.feed-card figure img {
+  float: left
+}
+
+.feed-card figure figcaption {
+  float: left;
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+
+.canban-board-feed {
+  overflow: hidden
+}
+
+.card-title span  {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+
+.preload {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin: -30px 0 0 -26px;
+  border-radius: 4px;
+  background: rgba(0,225,190,1);
+  transform: rotate(45deg);
+  animation: spin 1s infinite linear
+}
+@keyframes spin {
+	0% { -webkit-transform:rotate(0deg) }
+	100% { -webkit-transform:rotate(360deg) }
+}
+
+#Notification {
+        position: fixed;
+        right: 0;
+        background-color: rgba(255, 255, 255, 05);
+        padding: 20px;
+        margin: 20px;
+        z-index: 99;
+        border-radius: 4px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, .05), 0 4px 8px rgba(0, 0, 0, .1);
+        transition: all .5s ease-in-out;
+        opacity: 0
+}
